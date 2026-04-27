@@ -1,0 +1,99 @@
+Date,Voucher_No,Narration,Account,Debit,Credit,Balance
+01-04-2024,JV001,Opening Balance - Capital Account,Capital Account,,1000000.00,1000000.00
+01-04-2024,JV002,Opening Balance - Bank HDFC,Bank - HDFC,,800000.00,800000.00
+01-04-2024,JV003,Opening Balance - Cash in Hand,Cash Account,,50000.00,50000.00
+01-04-2024,JV004,Opening Balance - Stock,Stock / Inventory,,150000.00,150000.00
+02-04-2024,JV005,Purchase of Office Furniture,Furniture & Fixtures,75000.00,,725000.00
+02-04-2024,JV006,Rent Paid for April 2024,Rent Expense,45000.00,,680000.00
+03-04-2024,JV007,Sales Invoice INV-2024-001 - ABC Pvt Ltd,Sales Account,,180000.00,860000.00
+03-04-2024,JV008,Received from ABC Pvt Ltd against INV-2024-001,Bank - HDFC,,180000.00,1040000.00
+04-04-2024,JV009,Salary paid for March 2024,Salary & Wages,120000.00,,920000.00
+05-04-2024,JV010,Purchase from XYZ Suppliers,Purchase Account,85000.00,,835000.00
+05-04-2024,JV011,TDS Deducted on Salary,TDS Payable,,15000.00,850000.00
+06-04-2024,JV012,Sales Invoice INV-2024-002 - PQR Traders,Sales Account,,95000.00,945000.00
+07-04-2024,JV013,Telephone & Internet Bill - April,Telephone Expense,3500.00,,941500.00
+08-04-2024,JV014,Electricity Bill - April 2024,Electricity Expense,8200.00,,933300.00
+09-04-2024,JV015,Advertisement Expense - Google Ads,Advertisement Expense,25000.00,,908300.00
+10-04-2024,JV016,Received from PQR Traders,Bank - HDFC,,95000.00,1003300.00
+11-04-2024,JV017,Sales Invoice INV-2024-003 - LMN Corp,Sales Account,,250000.00,1253300.00
+12-04-2024,JV018,Professional Fees - CA Firm,Professional Fees,18000.00,,1235300.00
+13-04-2024,JV019,Purchase from ABC Suppliers,Purchase Account,120000.00,,1115300.00
+14-04-2024,JV020,Vehicle Fuel & Maintenance,Conveyance Expense,5500.00,,1109800.00
+15-04-2024,JV021,Received from LMN Corp - Advance,Bank - HDFC,,125000.00,1234800.00
+16-04-2024,JV022,Stationery & Office Supplies,Stationery Expense,2800.00,,1232000.00
+17-04-2024,JV023,Sales Invoice INV-2024-004 - DEF Ltd,Sales Account,,320000.00,1552000.00
+18-04-2024,JV024,Bank Charges - HDFC,Bank Charges,1200.00,,1550800.00
+19-04-2024,JV025,Interest Received on FD,Interest Received,,8500.00,1559300.00
+20-04-2024,JV026,Purchase of Laptop - Asset,Computer Equipment,65000.00,,1494300.00
+20-04-2024,JV027,Salary Advance to Employee,Advance to Employees,15000.00,,1479300.00
+21-04-2024,JV028,Received from DEF Ltd,Bank - HDFC,,320000.00,1799300.00
+22-04-2024,JV029,GST Payment - CGST,GST - CGST Payable,45000.00,,1754300.00
+22-04-2024,JV030,GST Payment - SGST,GST - SGST Payable,45000.00,,1709300.00
+23-04-2024,JV031,Printing & Stationery,Printing Expense,4200.00,,1705100.00
+24-04-2024,JV032,Sales Invoice INV-2024-005 - GHI Enterprises,Sales Account,,175000.00,1880100.00
+25-04-2024,JV033,Postage & Courier,Postage Expense,1500.00,,1878600.00
+26-04-2024,JV034,Purchase from MNO Suppliers,Purchase Account,90000.00,,1788600.00
+27-04-2024,JV035,Miscellaneous Expense,Miscellaneous Expense,3200.00,,1785400.00
+28-04-2024,JV036,Received from GHI Enterprises,Bank - HDFC,,175000.00,1960400.00
+29-04-2024,JV037,Loan Repayment - Principal,Bank Loan,50000.00,,1910400.00
+29-04-2024,JV038,Loan Repayment - Interest,Interest on Loan,8000.00,,1902400.00
+30-04-2024,JV039,Depreciation - Computer Equipment,Depreciation Expense,1083.00,,1901317.00
+30-04-2024,JV040,Depreciation - Furniture,Depreciation Expense,625.00,,1900692.00
+01-05-2024,JV041,Rent Paid for May 2024,Rent Expense,45000.00,,1855692.00
+02-05-2024,JV042,Sales Invoice INV-2024-006 - JKL Industries,Sales Account,,420000.00,2275692.00
+03-05-2024,JV043,Purchase from PQR Suppliers,Purchase Account,210000.00,,2065692.00
+04-05-2024,JV044,Salary paid for April 2024,Salary & Wages,125000.00,,1940692.00
+05-05-2024,JV045,TDS Deducted on Salary - April,TDS Payable,,16000.00,1956692.00
+06-05-2024,JV046,Sales Invoice INV-2024-007 - STU Corp,Sales Account,,85000.00,2041692.00
+07-05-2024,JV047,Telephone Bill - May,Telephone Expense,3800.00,,2037892.00
+08-05-2024,JV048,Electricity - May 2024,Electricity Expense,9100.00,,2028792.00
+09-05-2024,JV049,Received from JKL Industries,Bank - HDFC,,420000.00,2448792.00
+10-05-2024,JV050,Advertisement - Social Media,Advertisement Expense,15000.00,,2433792.00
+11-05-2024,JV051,Sales Invoice INV-2024-008 - VWX Ltd,Sales Account,,560000.00,2993792.00
+12-05-2024,JV052,Professional Fees - Legal Consultant,Professional Fees,35000.00,,2958792.00
+13-05-2024,JV053,Purchase from ABC Suppliers - Bulk Order,Purchase Account,280000.00,,2678792.00
+14-05-2024,JV054,Received from STU Corp,Bank - HDFC,,85000.00,2763792.00
+15-05-2024,JV055,Vehicle Insurance Premium,Insurance Expense,18000.00,,2745792.00
+16-05-2024,JV056,Repair & Maintenance - Office,Repair Expense,12000.00,,2733792.00
+17-05-2024,JV057,Sales Invoice INV-2024-009 - YZA Pvt Ltd,Sales Account,,195000.00,2928792.00
+18-05-2024,JV058,Received from VWX Ltd,Bank - HDFC,,560000.00,3488792.00
+19-05-2024,JV059,Purchase of Raw Material,Purchase Account,150000.00,,3338792.00
+20-05-2024,JV060,Bank Charges - May,Bank Charges,850.00,,3337942.00
+21-05-2024,JV061,Sales Invoice INV-2024-010 - BCD Traders,Sales Account,,310000.00,3647942.00
+22-05-2024,JV062,GST Payment - CGST - May,GST - CGST Payable,62000.00,,3585942.00
+22-05-2024,JV063,GST Payment - SGST - May,GST - SGST Payable,62000.00,,3523942.00
+23-05-2024,JV064,Received from YZA Pvt Ltd,Bank - HDFC,,195000.00,3718942.00
+24-05-2024,JV065,Conveyance Expense - May,Conveyance Expense,7200.00,,3711742.00
+25-05-2024,JV066,Advance to Vendor - EFG Suppliers,Advance to Suppliers,50000.00,,3661742.00
+26-05-2024,JV067,Received from BCD Traders,Bank - HDFC,,310000.00,3971742.00
+27-05-2024,JV068,Miscellaneous Income - Scrap Sale,Miscellaneous Income,,5000.00,3976742.00
+28-05-2024,JV069,Sales Invoice INV-2024-011 - HIJ Corp,Sales Account,,480000.00,4456742.00
+29-05-2024,JV070,Purchase from XYZ Suppliers - Monthly,Purchase Account,240000.00,,4216742.00
+30-05-2024,JV071,Loan Repayment - May,Bank Loan,50000.00,,4166742.00
+30-05-2024,JV072,Interest on Loan - May,Interest on Loan,7500.00,,4159242.00
+31-05-2024,JV073,Salary paid for May 2024,Salary & Wages,125000.00,,4034242.00
+31-05-2024,JV074,Depreciation - All Assets,Depreciation Expense,1708.00,,4032534.00
+01-06-2024,JV075,Rent Paid for June 2024,Rent Expense,45000.00,,3987534.00
+03-06-2024,JV076,Sales Invoice INV-2024-012 - KLM Ltd,Sales Account,,390000.00,4377534.00
+05-06-2024,JV077,Received from HIJ Corp,Bank - HDFC,,480000.00,4857534.00
+07-06-2024,JV078,Purchase - Q1 Stock Replenishment,Purchase Account,320000.00,,4537534.00
+10-06-2024,JV079,Advertisement Campaign - Q1,Advertisement Expense,40000.00,,4497534.00
+12-06-2024,JV080,Sales Invoice INV-2024-013 - NOP Enterprises,Sales Account,,275000.00,4772534.00
+15-06-2024,JV081,Received from KLM Ltd,Bank - HDFC,,390000.00,5162534.00
+15-06-2024,JV082,Salary paid for June 2024,Salary & Wages,130000.00,,5032534.00
+18-06-2024,JV083,TDS Deposited - Q1 (Apr-Jun),TDS Payable,47000.00,,4985534.00
+20-06-2024,JV084,Sales Invoice INV-2024-014 - QRS Trading,Sales Account,,145000.00,5130534.00
+22-06-2024,JV085,GST Payment - CGST - June,GST - CGST Payable,55000.00,,5075534.00
+22-06-2024,JV086,GST Payment - SGST - June,GST - SGST Payable,55000.00,,5020534.00
+25-06-2024,JV087,Received from NOP Enterprises,Bank - HDFC,,275000.00,5295534.00
+28-06-2024,JV088,Year End Closing - Transfer to P&L,Profit & Loss Account,500000.00,,4795534.00
+30-06-2024,JV089,Received from QRS Trading,Bank - HDFC,,145000.00,4940534.00
+30-06-2024,JV090,Interest Received - FD Q1,Interest Received,,25500.00,4966034.00
+01-07-2024,JV091,Rent Paid for July 2024,Rent Expense,45000.00,,4921034.00
+05-07-2024,JV092,Sales Invoice INV-2024-015 - TUV Corp,Sales Account,,500000.00,5421034.00
+10-07-2024,JV093,Purchase from YZA Suppliers,Purchase Account,250000.00,,5171034.00
+15-07-2024,JV094,Salary paid for July 2024,Salary & Wages,132000.00,,5039034.00
+20-07-2024,JV095,Received from TUV Corp,Bank - HDFC,,500000.00,5539034.00
+25-07-2024,JV096,Sales Invoice INV-2024-016 - WXY Ltd,Sales Account,,220000.00,5759034.00
+31-07-2024,JV097,GST Payment - July,GST - CGST Payable,90000.00,,5669034.00
+31-07-2024,JV098,GST Payment - July SGST,GST - SGST Payable,90000.00,,5579034.00
