@@ -96,6 +96,15 @@ export const gstApi = {
   downloadGstr1Pdf:  () => downloadBlob(`${BASE}/gst/download/gstr1/pdf`, 'gstr1_report.pdf'),
 }
 
+// ── Companies ─────────────────────────────────────────────────────────────────
+export const companiesApi = {
+  list:   ()          => api.get('/companies'),
+  add:    body        => api.post('/companies', body),
+  update: (id, body)  => api.put(`/companies/${id}`, body),
+  remove: id          => api.delete(`/companies/${id}`),
+  select: id          => api.post(`/companies/${id}/select`),
+}
+
 // ── Chat / Settings ───────────────────────────────────────────────────────────
 export const chatApi = {
   streamUrl:      ()    => `${BASE}/chat/stream`,

@@ -14,12 +14,24 @@ _sessions: dict[str, dict] = {}
 
 def _default_store() -> dict:
     s = get_settings()
+    default_company = {
+        "id": "default",
+        "name": s.default_company_name,
+        "gstin": s.default_gstin,
+        "tan": s.default_tan,
+        "pan": s.default_pan,
+        "address": "Mumbai, Maharashtra - 400001",
+        "financial_year": s.default_financial_year,
+    }
     return {
         # uploaded data
         "ledger_df": None,
         "gst_df": None,
         "employee_df": None,
-        # company config
+        # companies list & active selection
+        "companies": [default_company],
+        "active_company_id": "default",
+        # active company fields (kept in sync with selected company)
         "company_name": s.default_company_name,
         "company_gstin": s.default_gstin,
         "company_tan": s.default_tan,

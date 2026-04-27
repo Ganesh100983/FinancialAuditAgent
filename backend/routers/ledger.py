@@ -83,6 +83,6 @@ async def download_audit_report(user: CurrentUser = Depends(get_current_user)):
     anomalies = store.get("anomalies") or []
     if not summary:
         raise HTTPException(status.HTTP_400_BAD_REQUEST, "Run ledger analysis first.")
-    pdf = generate_ledger_report_pdf(summary, anomalies, get_settings().default_company_name)
+    pdf = generate_ledger_report_pdf(summary, anomalies, store.get("company_name") or get_settings().default_company_name)
     return Response(content=pdf, media_type="application/pdf",
                     headers={"Content-Disposition": "attachment; filename=audit_report.pdf"})

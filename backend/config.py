@@ -12,7 +12,6 @@ class Settings(BaseSettings):
 
     # Demo users — in production, replace with a real user store / DB
     demo_users: dict = {
-        "Rithanya":   {"password": "Rithanya007!",  "role": "Rithanya"},
         "auditor": {"password": "FinAudit@2025",  "role": "auditor"},
         "viewer":  {"password": "FinView@2025",   "role": "viewer"},
     }

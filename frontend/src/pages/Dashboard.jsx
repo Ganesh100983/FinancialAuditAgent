@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BookOpen, FileText, Receipt, AlertTriangle, TrendingUp, Bot } from 'lucide-react'
+import { BookOpen, FileText, Receipt, AlertTriangle, TrendingUp, Bot, Building2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { uploadApi, ledgerApi, gstApi, form16Api } from '../api/client'
 import MetricCard from '../components/ui/MetricCard'
@@ -17,6 +17,7 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true)
   const navigate = useNavigate()
   const user = useAppStore(s => s.user)
+  const activeCompany = useAppStore(s => s.activeCompany)
 
   useEffect(() => {
     async function load() {
@@ -55,13 +56,24 @@ export default function Dashboard() {
   return (
     <div className="space-y-6 max-w-7xl mx-auto">
       {/* Welcome */}
-      <div>
-        <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-          Good {greeting()}, {user?.username ?? 'User'} 👋
-        </h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
-          Here's your financial audit overview
-        </p>
+      <div className="flex items-start justify-between">
+        <div>
+          <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+            Good {greeting()}, {user?.username ?? 'User'} 👋
+          </h1>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
+            Here's your financial audit overview
+          </p>
+        </div>
+        {activeCompany && (
+          <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-brand-50 dark:bg-brand-900/20 border border-brand-100 dark:border-brand-800">
+            <Building2 className="w-4 h-4 text-brand-600 dark:text-brand-400 shrink-0" />
+            <div className="text-right">
+              <p className="text-sm font-semibold text-brand-700 dark:text-brand-300 leading-tight">{activeCompany.name}</p>
+              {activeCompany.gstin && <p className="text-xs text-brand-500 dark:text-brand-500 font-mono">{activeCompany.gstin}</p>}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Upload status banner */}

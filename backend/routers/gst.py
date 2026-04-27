@@ -116,6 +116,6 @@ async def download_gstr1_pdf(user: CurrentUser = Depends(get_current_user)):
         raise HTTPException(status.HTTP_404_NOT_FOUND, "Generate GSTR-1 first.")
     gstr1 = GSTR1Summary(**{k: data.get(k, v) for k, v in GSTR1Summary.model_fields.items()
                              if k in data})
-    pdf = generate_gst_report_pdf(gstr1)
+    pdf = generate_gst_report_pdf(gstr1, company_name=store.get("company_name", ""))
     return Response(content=pdf, media_type="application/pdf",
                     headers={"Content-Disposition": "attachment; filename=GSTR1_report.pdf"})

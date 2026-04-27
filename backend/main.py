@@ -13,7 +13,7 @@ import asyncio
 
 from backend.config import get_settings
 from backend.session_store import evict_expired_sessions
-from backend.routers import auth, upload, ledger, form16, gst, chat
+from backend.routers import auth, upload, ledger, form16, gst, chat, companies
 
 logging.basicConfig(
     level=logging.INFO,
@@ -96,7 +96,8 @@ app.include_router(upload.router, prefix=PREFIX)
 app.include_router(ledger.router, prefix=PREFIX)
 app.include_router(form16.router, prefix=PREFIX)
 app.include_router(gst.router,    prefix=PREFIX)
-app.include_router(chat.router,   prefix=PREFIX)
+app.include_router(chat.router,      prefix=PREFIX)
+app.include_router(companies.router, prefix=PREFIX)
 
 
 # ── Health & info ─────────────────────────────────────────────────────────────

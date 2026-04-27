@@ -418,7 +418,7 @@ def generate_form16_pdf(form16: Form16Data) -> bytes:
     return buffer.getvalue()
 
 
-def generate_gst_report_pdf(gstr1: GSTR1Summary) -> bytes:
+def generate_gst_report_pdf(gstr1: GSTR1Summary, company_name: str = "") -> bytes:
     buffer = io.BytesIO()
     doc = SimpleDocTemplate(
         buffer, pagesize=A4,
@@ -525,7 +525,7 @@ def generate_gst_report_pdf(gstr1: GSTR1Summary) -> bytes:
         ]))
         story.append(b2b_table)
 
-    company_name = gstr1.trade_name or "Company"
+    company_name = company_name or gstr1.trade_name or "Company"
     for elem in _signature_block(company_name, gstr1.gstin):
         story.append(elem)
 

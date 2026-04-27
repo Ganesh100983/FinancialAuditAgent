@@ -37,6 +37,18 @@ const useAppStore = create(
         openai_key_set: false,
       },
       setSettings: patch => set(s => ({ settings: { ...s.settings, ...patch } })),
+
+      // Companies list & active selection
+      companies: [],
+      activeCompany: null,
+      setCompanies: (companies, activeId) => {
+        const active = companies.find(c => c.id === activeId) ?? companies[0] ?? null
+        set({ companies, activeCompany: active })
+      },
+      setActiveCompany: company => set(s => ({
+        activeCompany: company,
+        settings: { ...s.settings, company_name: company?.name ?? '', company_gstin: company?.gstin ?? '' },
+      })),
     }),
     {
       name: 'fa-store',

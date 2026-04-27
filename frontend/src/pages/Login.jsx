@@ -87,9 +87,6 @@ export default function Login() {
             <p className="text-xs text-gray-500 dark:text-gray-400 text-center mb-2">Demo credentials</p>
             <div className="flex gap-2 justify-center text-xs">
               <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-gray-600 dark:text-gray-400">
-                Rithanya / Rithanya007!
-              </code>
-              <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-gray-600 dark:text-gray-400">
                 auditor / FinAudit@2025
               </code>
             </div>

@@ -89,11 +89,6 @@ async def stream_chat(
 
 class SettingsUpdateRequest(BaseModel):
     openai_api_key: str = ""
-    company_name: str = ""
-    company_gstin: str = ""
-    company_tan: str = ""
-    company_pan: str = ""
-    financial_year: str = ""
 
 
 @router.put("/settings")
@@ -101,17 +96,7 @@ async def update_settings(req: SettingsUpdateRequest, user: CurrentUser = Depend
     store = get_session(user.session_id)
     if req.openai_api_key:
         store["openai_api_key"] = req.openai_api_key
-    if req.company_name:
-        store["company_name"] = req.company_name
-    if req.company_gstin:
-        store["company_gstin"] = req.company_gstin
-    if req.company_tan:
-        store["company_tan"] = req.company_tan
-    if req.company_pan:
-        store["company_pan"] = req.company_pan
-    if req.financial_year:
-        store["financial_year"] = req.financial_year
-    return {"message": "Settings updated successfully"}
+    return {"message": "Settings updated successfully", "openai_api_key_set": bool(store.get("openai_api_key"))}
 
 
 @router.get("/settings")
